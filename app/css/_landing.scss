@@ -1,0 +1,48 @@
+.landing {
+	// height: 960px;
+	height: calc(100% - 90px);
+	@include breakpoint-down(medium) {
+		height: 100%;
+	}
+}
+.content {
+	height: 100%;
+	@include breakpoint-down(small) {
+		flex-direction: column;
+		padding-top: 90px;
+	}
+	.image {
+		flex: 1;
+		margin-right: 26px;
+		max-width: 500px;
+		@include breakpoint-down(small) {
+			max-width: 380px;
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+	.text-area {
+		flex-direction: column;
+		flex: 1;
+		margin-left: 26px;
+		@include breakpoint-down(medium) {
+			margin-left: 0px;
+		}
+		@include breakpoint-down(small) {
+			text-align: center;
+		}
+		&__preheader {
+			margin-bottom: 4px;
+		}
+		&__header {
+			margin-bottom: 8px;
+		}
+		&__bodytext {
+			max-width: 512px;
+		}
+	}
+}

@@ -1,0 +1,96 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: fira-sans, sans-serif;
+	color: $Black;
+	// overflow: hidden;
+	height: 100vh;
+}
+.container {
+	max-width: 1640px;
+
+	margin: 0 auto;
+	height: 100%;
+	@include breakpoint-down(large) {
+		padding: 0 40px;
+	}
+}
+
+//flexbox
+.flex {
+	display: flex;
+	&-jc-sb {
+		justify-content: space-between;
+	}
+	&-jc-a {
+		justify-content: space-around;
+	}
+	&-jc-se {
+		justify-content: space-evenly;
+	}
+	&-jc-c {
+		justify-content: center;
+	}
+	&-ai-c {
+		align-items: center;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $Black;
+}
+
+p {
+	font-size: 18px;
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 800;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 300;
+	color: $Grey;
+}
+// .content {
+// 	padding: 2rem 9.625rem;
+// 	background-color: white;
+// 	border-bottom-left-radius: 1.5rem;
+// 	border-bottom-right-radius: 1.5rem;
+// 	&__inside {
+// 		max-width: 100rem;
+// 		margin: 0 auto;
+// 	}
+// 	@include breakpoint-down(large) {
+// 		padding: 2rem 4.625rem;
+// 	}
+// }
+
+// Visibility
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
+
+.hide-for-desktop {
+	@include breakpoint-up(large) {
+		display: none;
+	}
+}

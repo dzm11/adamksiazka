@@ -1,6 +1,18 @@
 .nav {
 	height: 90px;
 	font-weight: 600;
+	.burger {
+		position: fixed;
+		right: 40px;
+		span {
+			cursor: pointer;
+			display: block;
+			height: 3px;
+			width: 35px;
+			margin-bottom: 6px;
+			background-color: $Black;
+		}
+	}
 	&__links {
 		font-size: 16px;
 		font-weight: 600;

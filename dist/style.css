@@ -105,6 +105,20 @@ h4 {
   font-weight: 600;
 }
 
+.nav .burger {
+  position: fixed;
+  right: 40px;
+}
+
+.nav .burger span {
+  cursor: pointer;
+  display: block;
+  height: 3px;
+  width: 35px;
+  margin-bottom: 6px;
+  background-color: #343434;
+}
+
 .nav__links {
   font-size: 16px;
   font-weight: 600;
@@ -141,12 +155,6 @@ h4 {
   height: calc(100% - 90px);
 }
 
-@media (max-width: 68.6875em) {
-  .landing {
-    height: 100%;
-  }
-}
-
 .content {
   height: 100%;
 }
@@ -157,7 +165,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 90px;
   }
 }
 
@@ -205,7 +212,7 @@ h4 {
 }
 
 .content .text-area__preheader {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .content .text-area__header {

@@ -1,15 +1,12 @@
 .landing {
 	// height: 960px;
 	height: calc(100% - 90px);
-	@include breakpoint-down(medium) {
-		height: 100%;
-	}
 }
 .content {
 	height: 100%;
 	@include breakpoint-down(small) {
 		flex-direction: column;
-		padding-top: 90px;
+		// padding-top: 90px;
 	}
 	.image {
 		flex: 1;
@@ -36,10 +33,11 @@
 			text-align: center;
 		}
 		&__preheader {
-			margin-bottom: 4px;
+			margin-bottom: 5px;
 		}
 		&__header {
 			margin-bottom: 8px;
+			// line-height: 30px;
 		}
 		&__bodytext {
 			max-width: 512px;

@@ -24,8 +24,11 @@ body {
 	@include breakpoint-down(large) {
 		padding: 0 40px;
 	}
+	@include breakpoint-down(small) {
+		height: auto;
+		padding: 0 20px;
+	}
 }
-
 //flexbox
 .flex {
 	display: flex;
@@ -91,5 +94,15 @@ h4 {
 .hide-for-desktop {
 	@include breakpoint-up(large) {
 		display: none;
+	}
+}
+
+.footer {
+	position: relative;
+	bottom: 20px;
+	height: 0px;
+	text-align: center;
+	p {
+		font-size: 9px;
 	}
 }

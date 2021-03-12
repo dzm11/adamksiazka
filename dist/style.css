@@ -173,13 +173,13 @@ h4 {
   height: calc(100% - 90px);
 }
 
-.content {
+.landing .content {
   height: 100%;
   padding: 50px 0;
 }
 
 @media (max-width: 39.9375em) {
-  .content {
+  .landing .content {
     padding: 0 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -190,7 +190,7 @@ h4 {
   }
 }
 
-.content .image {
+.landing .content .image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -200,7 +200,7 @@ h4 {
 }
 
 @media (max-width: 39.9375em) {
-  .content .image {
+  .landing .content .image {
     max-width: none;
     margin-right: 0;
     margin-bottom: 40px;
@@ -209,7 +209,7 @@ h4 {
   }
 }
 
-.content .image img {
+.landing .content .image img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: right;
@@ -218,7 +218,7 @@ h4 {
 }
 
 @media (max-width: 39.9375em) {
-  .content .image img {
+  .landing .content .image img {
     -o-object-position: center;
        object-position: center;
     min-height: 500px;
@@ -226,7 +226,7 @@ h4 {
   }
 }
 
-.content .text-area {
+.landing .content .text-area {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -239,13 +239,13 @@ h4 {
 }
 
 @media (max-width: 68.6875em) {
-  .content .text-area {
+  .landing .content .text-area {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 39.9375em) {
-  .content .text-area {
+  .landing .content .text-area {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -253,21 +253,148 @@ h4 {
   }
 }
 
-.content .text-area__preheader {
+.landing .content .text-area__preheader {
   margin-bottom: 5px;
 }
 
-.content .text-area__header {
+.landing .content .text-area__header {
+  max-width: 445px;
   margin-bottom: 8px;
 }
 
-.content .text-area__bodytext {
+@media (max-width: 39.9375em) {
+  .landing .content .text-area__header {
+    max-width: none;
+  }
+}
+
+.landing .content .text-area__bodytext {
   max-width: 512px;
 }
 
 @media (max-width: 39.9375em) {
-  .content .text-area__bodytext {
+  .landing .content .text-area__bodytext {
     max-width: none;
   }
+}
+
+.guruna {
+  height: calc(100% - 90px);
+}
+
+.guruna .content {
+  height: 100%;
+  padding: 50px 0;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content {
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.guruna .content .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 26px;
+  max-width: 500px;
+  max-height: 100%;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content .image {
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.guruna .content .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+  width: 100%;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content .image img {
+    -o-object-position: center;
+       object-position: center;
+    min-height: 500px;
+    height: 100%;
+  }
+}
+
+.guruna .content .text-area {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 26px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content .text-area {
+    margin-left: 0px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    text-align: center;
+  }
+}
+
+.guruna .content .text-area__preheader {
+  margin-bottom: 5px;
+}
+
+.guruna .content .text-area__header {
+  max-width: 445px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content .text-area__header {
+    max-width: none;
+  }
+}
+
+.guruna .content .text-area__bodytext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 68.6875em) {
+  .guruna .content .text-area__bodytext {
+    max-width: none;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .guruna .content .text-area__bodytext {
+    max-width: none;
+  }
+}
+
+.guruna .content .text-area__bodytext p {
+  height: 100%;
+  max-width: 495px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,10 @@
-.landing {
+.guruna {
 	// height: 960px;
 	height: calc(100% - 90px);
 	.content {
 		height: 100%;
 		padding: 50px 0;
-		@include breakpoint-down(small) {
+		@include breakpoint-down(medium) {
 			padding: 0 20px;
 			flex-direction: column;
 			width: 100%;
@@ -16,7 +16,7 @@
 			margin-right: 26px;
 			max-width: 500px;
 			max-height: 100%;
-			@include breakpoint-down(small) {
+			@include breakpoint-down(medium) {
 				max-width: none;
 				margin-right: 0;
 				margin-bottom: 40px;
@@ -29,7 +29,7 @@
 				object-position: right;
 				width: 100%;
 
-				@include breakpoint-down(small) {
+				@include breakpoint-down(medium) {
 					// object-fit: none;
 					object-position: center;
 					// width: 100%;
@@ -45,10 +45,10 @@
 			margin-bottom: 40px;
 			@include breakpoint-down(medium) {
 				margin-left: 0px;
-			}
-			@include breakpoint-down(small) {
 				justify-content: unset;
 				text-align: center;
+			}
+			@include breakpoint-down(medium) {
 			}
 			&__preheader {
 				margin-bottom: 5px;
@@ -56,15 +56,24 @@
 			&__header {
 				max-width: 445px;
 				margin-bottom: 8px;
-				@include breakpoint-down(small) {
+				@include breakpoint-down(medium) {
 					max-width: none;
 				}
 				// line-height: 30px;
 			}
 			&__bodytext {
-				max-width: 512px;
+				display: flex;
+				justify-content: center;
+				// max-width: 512px;
+				@include breakpoint-down(medium) {
+					max-width: none;
+				}
 				@include breakpoint-down(small) {
 					max-width: none;
+				}
+				p {
+					height: 100%;
+					max-width: 495px;
 				}
 			}
 		}

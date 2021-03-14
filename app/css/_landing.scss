@@ -1,10 +1,14 @@
 .landing {
 	// height: 960px;
+	// height: 100%;
 	height: calc(100% - 90px);
+	@include breakpoint-down(medium) {
+		height: auto;
+	}
 	.content {
 		height: 100%;
 		padding: 50px 0;
-		@include breakpoint-down(small) {
+		@include breakpoint-down(medium) {
 			padding: 0 20px;
 			flex-direction: column;
 			width: 100%;
@@ -16,22 +20,23 @@
 			margin-right: 26px;
 			max-width: 500px;
 			max-height: 100%;
-			@include breakpoint-down(small) {
-				max-width: none;
+			@include breakpoint-down(medium) {
+				// max-width: none;
 				margin-right: 0;
-				margin-bottom: 40px;
+				margin-bottom: 10px;
 				width: 100%;
-				height: 100%;
+				// height: 100%;
 			}
 
 			img {
-				object-fit: contain;
-				object-position: right;
+				// object-fit: contain;
+				// object-position: right;
 				width: 100%;
+				height: 750px;
 
 				@include breakpoint-down(small) {
 					// object-fit: none;
-					object-position: center;
+					// object-position: center;
 					// width: 100%;
 					min-height: 500px;
 					height: 100%;
@@ -46,7 +51,7 @@
 			@include breakpoint-down(medium) {
 				margin-left: 0px;
 			}
-			@include breakpoint-down(small) {
+			@include breakpoint-down(medium) {
 				justify-content: unset;
 				text-align: center;
 			}
@@ -56,7 +61,7 @@
 			&__header {
 				max-width: 445px;
 				margin-bottom: 8px;
-				@include breakpoint-down(small) {
+				@include breakpoint-down(medium) {
 					max-width: none;
 				}
 				// line-height: 30px;

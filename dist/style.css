@@ -384,7 +384,6 @@ body.open {
 
 @media (max-width: 39.9375em) {
   .landing .content .image img {
-    min-height: 500px;
     height: 100%;
   }
 }
@@ -483,8 +482,7 @@ body.open {
 }
 
 .guruna .content .image img {
-  width: 500px;
-  height: 100%;
+  width: 100%;
 }
 
 .guruna .content .text-area {

@@ -29,9 +29,10 @@
 			}
 
 			img {
-				object-fit: contain;
-				object-position: right;
-				width: 100%;
+				// object-fit: contain;
+				// object-position: right;
+				width: 500px;
+				height: 100%;
 
 				@include breakpoint-down(medium) {
 					// object-fit: none;
